@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/list"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.avnis.ontime.Detail"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_margin="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Subject"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/listView2"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:stackFromBottom="false"
+        android:smoothScrollbar="true"
+        android:textFilterEnabled="false"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

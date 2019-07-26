@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         am.execSQL("create table if not exists thursday(time varchar,name varchar,dur varchar)");
         am.execSQL("create table if not exists saturday(time varchar,name varchar,dur varchar)");
         am.execSQL("create table if not exists sunday(time varchar,name varchar,dur varchar)");
+        //am.execSQL("create table if not exists sync()");
         am.execSQL("create table if not exists subjects(name varchar,tc int,ac int,per int)");
 //        am.execSQL("insert into monday values('4:20','name','2')");
         c1=(CardView)findViewById(R.id.card_view1);

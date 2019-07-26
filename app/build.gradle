@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
 
     defaultConfig {
         applicationId "com.example.avnis.ontime"
-        minSdkVersion 24
-        targetSdkVersion 24
+        minSdkVersion 22
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }

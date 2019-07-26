@@ -1,11 +1,14 @@
 package com.example.avnis.ontime;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -26,7 +29,18 @@ public class AttendaceInfo extends AppCompatActivity {
         add = (FloatingActionButton) findViewById(R.id.fab);
         listItem = new ArrayList<>();
         viewData();
-
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i1= new Intent(AttendaceInfo.this,Detail.class);
+                InfoType listname= (InfoType) list.getItemAtPosition(position);
+                String subjectname=listname.getName();
+                Bundle b1= new Bundle();
+                b1.putString("subject", subjectname);
+                i1.putExtras(b1);
+                startActivity(i1);
+            }
+        });
 
     }
 

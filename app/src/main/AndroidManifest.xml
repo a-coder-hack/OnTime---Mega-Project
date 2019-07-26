@@ -36,7 +36,28 @@
         <activity android:name=".SundayUpdate" />
         <activity android:name=".AttendaceInfo" />
         <activity android:name=".PrevEntry" />
-        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".AboutUs" />
+        <activity android:name=".PresentActivity" />
+        <activity android:name=".AbsentActivity" />
+        <activity android:name=".CancelActivity" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.example.Action_SNOOZE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".NotificationAlarmReceiver"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.example.Action_SNOOZE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".NotificationHandler" />
+        <activity android:name=".Detail"></activity>
     </application>
 
 </manifest>
