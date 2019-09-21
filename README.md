@@ -40,5 +40,5 @@ Update Attendance -> Click on the subject to add entry -> Click to change the st
 Update Attendance section contains a method to add an extra class, which on invoked asks for the subject, time and duration of the class.
 
 Under Construction, 
-Status - WebApi ready with user based repositories.
+Status -  WebApi ready with user based repositories.
 
